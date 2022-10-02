@@ -1,0 +1,2 @@
+# Sensor-Fault-Detection-using-Azure-Data-Factory-
+To create a data validation pipeline using azure datafactory for multiple sets of CSV files consisting of different sensor data coming from IoT devices placed at remote locations and moving them into appropriate azure blob containers for further processing and then merge the valid content of files so data scientists can use that file for model building
