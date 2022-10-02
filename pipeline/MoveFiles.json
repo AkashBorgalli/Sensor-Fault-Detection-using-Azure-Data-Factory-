@@ -603,6 +603,27 @@
 					},
 					"traceLevel": "Fine"
 				}
+			},
+			{
+				"name": "Send Email on Failure",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "merging_into_one",
+						"dependencyConditions": [
+							"Failed",
+							"Skipped"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
 		"parameters": {
