@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "dataflow1",
+						"referenceName": "merging_good_content_files_in_one_dataflow",
 						"type": "DataFlowReference"
 					},
 					"compute": {

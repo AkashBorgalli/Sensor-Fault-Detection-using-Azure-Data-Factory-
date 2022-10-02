@@ -1,5 +1,5 @@
 {
-	"name": "dataflow1",
+	"name": "merging_good_content_files_in_one_dataflow",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
