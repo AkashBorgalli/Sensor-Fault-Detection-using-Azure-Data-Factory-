@@ -35,6 +35,22 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ref_schema_ls'"
 		},
+		"EveryDay Once_properties_MoveFiles_parameters_SourceStore_Location": {
+			"type": "string",
+			"defaultValue": "raw-data"
+		},
+		"EveryDay Once_properties_MoveFiles_parameters_SourceStore_Directory": {
+			"type": "string",
+			"defaultValue": "raw-data"
+		},
+		"EveryDay Once_properties_MoveFiles_parameters_DestinationStore_Location": {
+			"type": "string",
+			"defaultValue": "good-data"
+		},
+		"EveryDay Once_properties_MoveFiles_parameters_DestinationStore_Directory": {
+			"type": "string",
+			"defaultValue": "good-data"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -100,6 +116,18 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"EveryDay Once_properties_MoveFiles_parameters_SourceStore_Location": {
+						"value": "[parameters('EveryDay Once_properties_MoveFiles_parameters_SourceStore_Location')]"
+					},
+					"EveryDay Once_properties_MoveFiles_parameters_SourceStore_Directory": {
+						"value": "[parameters('EveryDay Once_properties_MoveFiles_parameters_SourceStore_Directory')]"
+					},
+					"EveryDay Once_properties_MoveFiles_parameters_DestinationStore_Location": {
+						"value": "[parameters('EveryDay Once_properties_MoveFiles_parameters_DestinationStore_Location')]"
+					},
+					"EveryDay Once_properties_MoveFiles_parameters_DestinationStore_Directory": {
+						"value": "[parameters('EveryDay Once_properties_MoveFiles_parameters_DestinationStore_Directory')]"
 					}
 				}
 			},

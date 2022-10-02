@@ -26,6 +26,18 @@
 		"ref_schema_ls_connectionString": {
 			"value": ""
 		},
+		"EveryDay Once_properties_MoveFiles_parameters_SourceStore_Location": {
+			"value": "raw-data"
+		},
+		"EveryDay Once_properties_MoveFiles_parameters_SourceStore_Directory": {
+			"value": "raw-data"
+		},
+		"EveryDay Once_properties_MoveFiles_parameters_DestinationStore_Location": {
+			"value": "good-data"
+		},
+		"EveryDay Once_properties_MoveFiles_parameters_DestinationStore_Directory": {
+			"value": "good-data"
+		},
 		"containerUri": {
 			"value": ""
 		},
