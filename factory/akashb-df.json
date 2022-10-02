@@ -1,0 +1,9 @@
+{
+	"name": "akashb-df",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7a812070-5c13-40d1-a5f5-4addbb1a889e",
+		"tenantId": "191c77d0-3f43-488a-819a-6a562723ccde"
+	}
+}

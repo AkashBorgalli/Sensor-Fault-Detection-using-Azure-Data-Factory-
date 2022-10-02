@@ -1,0 +1,536 @@
+{
+	"name": "MoveFiles",
+	"properties": {
+		"description": "Move files from one folder to another folder",
+		"activities": [
+			{
+				"name": "Get Filenames",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "BinaryDataSource_Folder",
+						"type": "DatasetReference",
+						"parameters": {
+							"Container": {
+								"value": "@pipeline().parameters.SourceStore_Directory",
+								"type": "Expression"
+							},
+							"Directory": "@coalesce(null)"
+						}
+					},
+					"fieldList": [
+						"childItems"
+					],
+					"storeSettings": {
+						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "BinaryReadSettings"
+					}
+				}
+			},
+			{
+				"name": "ForEachFile",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Get Filenames",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Filenames').output.childItems",
+						"type": "Expression"
+					},
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "If matches file",
+							"type": "IfCondition",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"expression": {
+									"value": "@and(contains(item().name,'wafer_'),equals(length(item().name),25))",
+									"type": "Expression"
+								},
+								"ifFalseActivities": [
+									{
+										"name": "raw to bad",
+										"type": "Copy",
+										"dependsOn": [],
+										"policy": {
+											"timeout": "0.12:00:00",
+											"retry": 0,
+											"retryIntervalInSeconds": 30,
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"source": {
+												"type": "BinarySource",
+												"storeSettings": {
+													"type": "AzureBlobStorageReadSettings",
+													"recursive": true,
+													"wildcardFileName": {
+														"value": "@item().name",
+														"type": "Expression"
+													},
+													"deleteFilesAfterCompletion": false
+												},
+												"formatSettings": {
+													"type": "BinaryReadSettings"
+												}
+											},
+											"sink": {
+												"type": "BinarySink",
+												"storeSettings": {
+													"type": "AzureBlobStorageWriteSettings"
+												}
+											},
+											"enableStaging": false,
+											"logSettings": {
+												"enableCopyActivityLog": true,
+												"copyActivityLogSettings": {
+													"logLevel": "Info",
+													"enableReliableLogging": false
+												},
+												"logLocationSettings": {
+													"linkedServiceName": {
+														"referenceName": "linkedService1",
+														"type": "LinkedServiceReference"
+													}
+												}
+											}
+										},
+										"inputs": [
+											{
+												"referenceName": "BinaryDataSource_Folder",
+												"type": "DatasetReference",
+												"parameters": {
+													"Container": "raw-data",
+													"Directory": "@coalesce(null)"
+												}
+											}
+										],
+										"outputs": [
+											{
+												"referenceName": "BinaryDataDestination",
+												"type": "DatasetReference",
+												"parameters": {
+													"Container": "bad-data",
+													"Directory": "@coalesce(null)",
+													"filename": {
+														"value": "@pipeline().parameters.DestinationStore_Location",
+														"type": "Expression"
+													}
+												}
+											}
+										]
+									},
+									{
+										"name": "Delete from source directory",
+										"type": "Delete",
+										"dependsOn": [
+											{
+												"activity": "raw to bad",
+												"dependencyConditions": [
+													"Succeeded"
+												]
+											}
+										],
+										"policy": {
+											"timeout": "0.12:00:00",
+											"retry": 0,
+											"retryIntervalInSeconds": 30,
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"dataset": {
+												"referenceName": "BinaryDataSource_Folder",
+												"type": "DatasetReference",
+												"parameters": {
+													"Container": "raw-data",
+													"Directory": "@coalesce(null)"
+												}
+											},
+											"enableLogging": false,
+											"storeSettings": {
+												"type": "AzureBlobStorageReadSettings",
+												"recursive": true,
+												"wildcardFileName": {
+													"value": "@item().name",
+													"type": "Expression"
+												},
+												"enablePartitionDiscovery": false
+											}
+										}
+									}
+								],
+								"ifTrueActivities": [
+									{
+										"name": "raw to good",
+										"type": "Copy",
+										"dependsOn": [],
+										"policy": {
+											"timeout": "0.12:00:00",
+											"retry": 0,
+											"retryIntervalInSeconds": 30,
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"source": {
+												"type": "BinarySource",
+												"storeSettings": {
+													"type": "AzureBlobStorageReadSettings",
+													"recursive": true,
+													"wildcardFileName": {
+														"value": "@item().name",
+														"type": "Expression"
+													},
+													"deleteFilesAfterCompletion": false
+												},
+												"formatSettings": {
+													"type": "BinaryReadSettings"
+												}
+											},
+											"sink": {
+												"type": "BinarySink",
+												"storeSettings": {
+													"type": "AzureBlobStorageWriteSettings"
+												}
+											},
+											"enableStaging": false,
+											"logSettings": {
+												"enableCopyActivityLog": true,
+												"copyActivityLogSettings": {
+													"logLevel": "Info",
+													"enableReliableLogging": false
+												},
+												"logLocationSettings": {
+													"linkedServiceName": {
+														"referenceName": "linkedService1",
+														"type": "LinkedServiceReference"
+													}
+												}
+											}
+										},
+										"inputs": [
+											{
+												"referenceName": "BinaryDataSource_Folder",
+												"type": "DatasetReference",
+												"parameters": {
+													"Container": "raw-data",
+													"Directory": "@coalesce(null)"
+												}
+											}
+										],
+										"outputs": [
+											{
+												"referenceName": "BinaryDataDestination",
+												"type": "DatasetReference",
+												"parameters": {
+													"Container": "good-data",
+													"Directory": "@coalesce(null)",
+													"filename": {
+														"value": "@pipeline().parameters.DestinationStore_Location",
+														"type": "Expression"
+													}
+												}
+											}
+										]
+									},
+									{
+										"name": "Delete from source",
+										"type": "Delete",
+										"dependsOn": [
+											{
+												"activity": "raw to good",
+												"dependencyConditions": [
+													"Succeeded"
+												]
+											}
+										],
+										"policy": {
+											"timeout": "0.12:00:00",
+											"retry": 0,
+											"retryIntervalInSeconds": 30,
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"dataset": {
+												"referenceName": "BinaryDataSource_Folder",
+												"type": "DatasetReference",
+												"parameters": {
+													"Container": "raw-data",
+													"Directory": "@coalesce(null)"
+												}
+											},
+											"enableLogging": false,
+											"storeSettings": {
+												"type": "AzureBlobStorageReadSettings",
+												"recursive": true,
+												"wildcardFileName": {
+													"value": "@item().name",
+													"type": "Expression"
+												},
+												"enablePartitionDiscovery": false
+											}
+										}
+									}
+								]
+							}
+						},
+						{
+							"name": "If Schema Matches",
+							"type": "IfCondition",
+							"dependsOn": [
+								{
+									"activity": "Get Metadata from current",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								},
+								{
+									"activity": "Get sensor schema",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"userProperties": [],
+							"typeProperties": {
+								"expression": {
+									"value": "@equals(activity('Get Metadata from current').output.structure,activity('Get sensor schema').output.structure)",
+									"type": "Expression"
+								},
+								"ifFalseActivities": [
+									{
+										"name": "good to bad container",
+										"type": "Copy",
+										"dependsOn": [],
+										"policy": {
+											"timeout": "0.12:00:00",
+											"retry": 0,
+											"retryIntervalInSeconds": 30,
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"source": {
+												"type": "BinarySource",
+												"storeSettings": {
+													"type": "AzureBlobStorageReadSettings",
+													"recursive": true,
+													"wildcardFileName": {
+														"value": "@item().name",
+														"type": "Expression"
+													},
+													"deleteFilesAfterCompletion": false
+												},
+												"formatSettings": {
+													"type": "BinaryReadSettings"
+												}
+											},
+											"sink": {
+												"type": "BinarySink",
+												"storeSettings": {
+													"type": "AzureBlobStorageWriteSettings"
+												}
+											},
+											"enableStaging": false,
+											"logSettings": {
+												"enableCopyActivityLog": true,
+												"copyActivityLogSettings": {
+													"logLevel": "Info",
+													"enableReliableLogging": false
+												},
+												"logLocationSettings": {
+													"linkedServiceName": {
+														"referenceName": "linkedService1",
+														"type": "LinkedServiceReference"
+													}
+												}
+											}
+										},
+										"inputs": [
+											{
+												"referenceName": "BinaryDataSource_Folder",
+												"type": "DatasetReference",
+												"parameters": {
+													"Container": "good-data",
+													"Directory": "@coalesce(null)"
+												}
+											}
+										],
+										"outputs": [
+											{
+												"referenceName": "BinaryDataDestination",
+												"type": "DatasetReference",
+												"parameters": {
+													"Container": "bad-data",
+													"Directory": "@coalesce(null)",
+													"filename": {
+														"value": "@pipeline().parameters.DestinationStore_Location",
+														"type": "Expression"
+													}
+												}
+											}
+										]
+									},
+									{
+										"name": "Delete from good container",
+										"type": "Delete",
+										"dependsOn": [
+											{
+												"activity": "good to bad container",
+												"dependencyConditions": [
+													"Succeeded"
+												]
+											}
+										],
+										"policy": {
+											"timeout": "0.12:00:00",
+											"retry": 0,
+											"retryIntervalInSeconds": 30,
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"dataset": {
+												"referenceName": "BinaryDataSource_Folder",
+												"type": "DatasetReference",
+												"parameters": {
+													"Container": "good-data",
+													"Directory": "@coalesce(null)"
+												}
+											},
+											"enableLogging": false,
+											"storeSettings": {
+												"type": "AzureBlobStorageReadSettings",
+												"recursive": true,
+												"wildcardFileName": {
+													"value": "@item().name",
+													"type": "Expression"
+												},
+												"enablePartitionDiscovery": false
+											}
+										}
+									}
+								]
+							}
+						},
+						{
+							"name": "Get sensor schema",
+							"type": "GetMetadata",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"dataset": {
+									"referenceName": "wafer__schema_data",
+									"type": "DatasetReference"
+								},
+								"fieldList": [
+									"structure"
+								],
+								"storeSettings": {
+									"type": "AzureBlobStorageReadSettings",
+									"recursive": true,
+									"enablePartitionDiscovery": false
+								},
+								"formatSettings": {
+									"type": "DelimitedTextReadSettings"
+								}
+							}
+						},
+						{
+							"name": "Get Metadata from current",
+							"type": "GetMetadata",
+							"dependsOn": [
+								{
+									"activity": "If matches file",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"dataset": {
+									"referenceName": "good_container_schema",
+									"type": "DatasetReference"
+								},
+								"fieldList": [
+									"structure"
+								],
+								"storeSettings": {
+									"type": "AzureBlobStorageReadSettings",
+									"recursive": true,
+									"enablePartitionDiscovery": false
+								},
+								"formatSettings": {
+									"type": "DelimitedTextReadSettings"
+								}
+							}
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"SourceStore_Location": {
+				"type": "String"
+			},
+			"SourceStore_Directory": {
+				"type": "String"
+			},
+			"DestinationStore_Location": {
+				"type": "String"
+			},
+			"DestinationStore_Directory": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-10-01T09:57:48Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

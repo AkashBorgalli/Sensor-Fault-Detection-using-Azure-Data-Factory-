@@ -1,0 +1,2392 @@
+{
+	"name": "ds_sensor",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ref_schema_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "ref-schema"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Prop_0",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-1",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-2",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-3",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-4",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-5",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-6",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-7",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-8",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-9",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-10",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-11",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-12",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-13",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-14",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-15",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-16",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-17",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-18",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-19",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-20",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-21",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-22",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-23",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-24",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-25",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-26",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-27",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-28",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-29",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-30",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-31",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-32",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-33",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-34",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-35",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-36",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-37",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-38",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-39",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-40",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-41",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-42",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-43",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-44",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-45",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-46",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-47",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-48",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-49",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-50",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-51",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-52",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-53",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-54",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-55",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-56",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-57",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-58",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-59",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-60",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-61",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-62",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-63",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-64",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-65",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-66",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-67",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-68",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-69",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-70",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-71",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-72",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-73",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-74",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-75",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-76",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-77",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-78",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-79",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-80",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-81",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-82",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-83",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-84",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-85",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-86",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-87",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-88",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-89",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-90",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-91",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-92",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-93",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-94",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-95",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-96",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-97",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-98",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-99",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-100",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-101",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-102",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-103",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-104",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-105",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-106",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-107",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-108",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-109",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-110",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-111",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-112",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-113",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-114",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-115",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-116",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-117",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-118",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-119",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-120",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-121",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-122",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-123",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-124",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-125",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-126",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-127",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-128",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-129",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-130",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-131",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-132",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-133",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-134",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-135",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-136",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-137",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-138",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-139",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-140",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-141",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-142",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-143",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-144",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-145",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-146",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-147",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-148",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-149",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-150",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-151",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-152",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-153",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-154",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-155",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-156",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-157",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-158",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-159",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-160",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-161",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-162",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-163",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-164",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-165",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-166",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-167",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-168",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-169",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-170",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-171",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-172",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-173",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-174",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-175",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-176",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-177",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-178",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-179",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-180",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-181",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-182",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-183",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-184",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-185",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-186",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-187",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-188",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-189",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-190",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-191",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-192",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-193",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-194",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-195",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-196",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-197",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-198",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-199",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-200",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-201",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-202",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-203",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-204",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-205",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-206",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-207",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-208",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-209",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-210",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-211",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-212",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-213",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-214",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-215",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-216",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-217",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-218",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-219",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-220",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-221",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-222",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-223",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-224",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-225",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-226",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-227",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-228",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-229",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-230",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-231",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-232",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-233",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-234",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-235",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-236",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-237",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-238",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-239",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-240",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-241",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-242",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-243",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-244",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-245",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-246",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-247",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-248",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-249",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-250",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-251",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-252",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-253",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-254",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-255",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-256",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-257",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-258",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-259",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-260",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-261",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-262",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-263",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-264",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-265",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-266",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-267",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-268",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-269",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-270",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-271",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-272",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-273",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-274",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-275",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-276",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-277",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-278",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-279",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-280",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-281",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-282",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-283",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-284",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-285",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-286",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-287",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-288",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-289",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-290",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-291",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-292",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-293",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-294",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-295",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-296",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-297",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-298",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-299",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-300",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-301",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-302",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-303",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-304",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-305",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-306",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-307",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-308",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-309",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-310",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-311",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-312",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-313",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-314",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-315",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-316",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-317",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-318",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-319",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-320",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-321",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-322",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-323",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-324",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-325",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-326",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-327",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-328",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-329",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-330",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-331",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-332",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-333",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-334",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-335",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-336",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-337",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-338",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-339",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-340",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-341",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-342",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-343",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-344",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-345",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-346",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-347",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-348",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-349",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-350",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-351",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-352",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-353",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-354",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-355",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-356",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-357",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-358",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-359",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-360",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-361",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-362",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-363",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-364",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-365",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-366",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-367",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-368",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-369",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-370",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-371",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-372",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-373",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-374",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-375",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-376",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-377",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-378",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-379",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-380",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-381",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-382",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-383",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-384",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-385",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-386",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-387",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-388",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-389",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-390",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-391",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-392",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-393",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-394",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-395",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-396",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-397",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-398",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-399",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-400",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-401",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-402",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-403",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-404",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-405",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-406",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-407",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-408",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-409",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-410",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-411",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-412",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-413",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-414",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-415",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-416",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-417",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-418",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-419",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-420",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-421",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-422",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-423",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-424",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-425",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-426",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-427",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-428",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-429",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-430",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-431",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-432",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-433",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-434",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-435",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-436",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-437",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-438",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-439",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-440",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-441",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-442",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-443",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-444",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-445",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-446",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-447",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-448",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-449",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-450",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-451",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-452",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-453",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-454",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-455",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-456",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-457",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-458",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-459",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-460",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-461",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-462",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-463",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-464",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-465",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-466",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-467",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-468",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-469",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-470",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-471",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-472",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-473",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-474",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-475",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-476",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-477",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-478",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-479",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-480",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-481",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-482",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-483",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-484",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-485",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-486",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-487",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-488",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-489",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-490",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-491",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-492",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-493",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-494",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-495",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-496",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-497",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-498",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-499",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-500",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-501",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-502",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-503",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-504",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-505",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-506",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-507",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-508",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-509",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-510",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-511",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-512",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-513",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-514",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-515",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-516",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-517",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-518",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-519",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-520",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-521",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-522",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-523",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-524",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-525",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-526",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-527",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-528",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-529",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-530",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-531",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-532",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-533",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-534",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-535",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-536",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-537",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-538",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-539",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-540",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-541",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-542",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-543",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-544",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-545",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-546",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-547",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-548",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-549",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-550",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-551",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-552",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-553",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-554",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-555",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-556",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-557",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-558",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-559",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-560",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-561",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-562",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-563",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-564",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-565",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-566",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-567",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-568",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-569",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-570",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-571",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-572",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-573",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-574",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-575",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-576",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-577",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-578",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-579",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-580",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-581",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-582",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-583",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-584",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-585",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-586",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-587",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-588",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-589",
+				"type": "String"
+			},
+			{
+				"name": "Sensor-590",
+				"type": "String"
+			},
+			{
+				"name": "Good/Bad",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
