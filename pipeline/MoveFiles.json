@@ -628,13 +628,8 @@
 					"url": "https://prod-36.eastus.logic.azure.com:443/workflows/3066b4927a0c4627a2a782c1f1e762c9/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=0Ai5JPkTLg7nz-TGQDf7Rp3tEo9oLEorx_r3ENZXKLk",
 					"method": "POST",
 					"body": {
-						"title": "@{activity('Execute Pipeline1').output.pipelineName} FAILED!",
-						"message": "Error: @{activity('Execute Pipeline1').error.message}",
-						"color": "Red",
-						"dataFactoryName": "@{pipeline().DataFactory}",
-						"pipelineName": "@{activity('Execute Pipeline1').output.pipelineName}",
-						"pipelineRunId": "@{activity('Execute Pipeline1').output.pipelineRunId}",
-						"time": "@{utcnow()}"
+						"value": "{\n    \"title\": \"@{pipeline().Pipeline} FAILED!\",\n    \"message\": \"Error: @{activity('good to bad container').error.message}\",\n    \"color\": \"Red\",\n    \"dataFactoryName\": \"@{pipeline().DataFactory}\",\n    \"pipelineName\": \"@{pipeline().Pipeline}\",\n    \"pipelineRunId\": \"@{pipeline().RunId}\",\n    \"time\": \"@{utcnow()}\"\n    }",
+						"type": "Expression"
 					}
 				}
 			}
