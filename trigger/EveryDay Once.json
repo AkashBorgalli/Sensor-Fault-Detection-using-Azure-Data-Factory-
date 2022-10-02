@@ -1,0 +1,30 @@
+{
+	"name": "EveryDay Once",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "MoveFiles",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"SourceStore_Location": "raw-data",
+					"SourceStore_Directory": "raw-data",
+					"DestinationStore_Location": "good-data",
+					"DestinationStore_Directory": "good-data"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2022-10-02T12:23:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
