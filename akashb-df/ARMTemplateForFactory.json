@@ -660,8 +660,8 @@
 								"type": "DataFlowReference",
 								"parameters": {},
 								"datasetParameters": {
-									"source1": {},
-									"sink1": {}
+									"goodcontainer": {},
+									"sinkfurnisheddata": {}
 								}
 							},
 							"staging": {},
@@ -16668,7 +16668,7 @@
 								"referenceName": "new_source",
 								"type": "DatasetReference"
 							},
-							"name": "source1"
+							"name": "goodcontainer"
 						}
 					],
 					"sinks": [
@@ -16677,7 +16677,7 @@
 								"referenceName": "new_furnished",
 								"type": "DatasetReference"
 							},
-							"name": "sink1",
+							"name": "sinkfurnisheddata",
 							"rejectedDataLinkedService": {
 								"referenceName": "AzureBlobStorage_Raw",
 								"type": "LinkedServiceReference"
@@ -16686,7 +16686,7 @@
 					],
 					"transformations": [
 						{
-							"name": "select1"
+							"name": "dropnullheadercolumn"
 						}
 					],
 					"scriptLines": [
@@ -17287,8 +17287,8 @@
 						"     allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     ignoreNoFilesFound: false,",
-						"     wildcardPaths:['*']) ~> source1",
-						"source1 select(mapColumn(",
+						"     wildcardPaths:['*']) ~> goodcontainer",
+						"goodcontainer select(mapColumn(",
 						"          {Sensor-1},",
 						"          {Sensor-2},",
 						"          {Sensor-3},",
@@ -17882,8 +17882,8 @@
 						"          {Good/Bad}",
 						"     ),",
 						"     skipDuplicateMapInputs: true,",
-						"     skipDuplicateMapOutputs: true) ~> select1",
-						"select1 sink(allowSchemaDrift: true,",
+						"     skipDuplicateMapOutputs: true) ~> dropnullheadercolumn",
+						"dropnullheadercolumn sink(allowSchemaDrift: true,",
 						"     validateSchema: false,",
 						"     input(",
 						"          Prop_0 as string,",
@@ -19075,7 +19075,7 @@
 						"          {Sensor-590},",
 						"          {Good/Bad}",
 						"     ),",
-						"     partitionBy('hash', 1)) ~> sink1"
+						"     partitionBy('hash', 1)) ~> sinkfurnisheddata"
 					]
 				}
 			},
