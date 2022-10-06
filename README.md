@@ -13,7 +13,7 @@ Steps : 1. Validating filenames by their length(25) and which starts from a spec
 
 ## 💻 Tech Stack
 
-**Cloud Platform:**  Azure 
+**Cloud Platform:**  Azure \
 **Cloud ETL Tool:**  Azure Data Factory 
 
 ## 💡 Screenshots:
