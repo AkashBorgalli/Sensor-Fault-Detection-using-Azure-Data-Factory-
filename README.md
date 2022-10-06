@@ -6,7 +6,7 @@ To create a data validation pipeline based on Data Sharing Agreement(DSA) using 
 ## ⚙️ Data Validations and Preprocessing steps:
 Steps : 1. Validating filenames by their length(25) and which starts from a specific character(wafer).\
 2. Columns present in a particular csv file (592).\
-3. Dropping column which has no header
+3. Dropping column which has no header.\
 4. Merging the appropriate files into one csv file.\
 5. Repeat everyday once
 
